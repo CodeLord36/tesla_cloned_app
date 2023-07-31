@@ -1,0 +1,30 @@
+.sectionWrapper {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sectionText {
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.sectionHeaderText {
+  font-size: large;
+  font-weight: 600;
+}
+
+.bottomItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

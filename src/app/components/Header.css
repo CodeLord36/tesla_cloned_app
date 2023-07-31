@@ -1,0 +1,105 @@
+/* Header */
+
+.headerContainer {
+    min-height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* Center Menu */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.menuItem {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 5px;
+    flex-wrap: nowrap;
+}
+
+.rightMenu {
+    display: flex;
+    align-items: center;
+}
+
+.rightMenuItem {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+/* CustomMenu */
+
+.customMenu {
+    cursor: pointer;
+}
+
+/* BurgerNav */
+
+.menuList {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+    width: 300px;
+    z-index: 16;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    transition: transform 0.2s ease-in-out;
+    transform: translateX(100%);
+}
+
+/* .my-element {
+  transition: transform 0.3s ease;
+  transform: translateX(100%);
+} */
+
+.menuList.show {
+  transform: translateX(0);
+}
+
+
+.closeWrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.list {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+a {
+    font-weight: 600;
+}
+
+/* CustomClose */
+
+.customClose {
+    cursor: pointer;
+}
+
+/* BurgerNav scroll */
+.scroll {
+    height: 90vh;
+    overflow-y: scroll;
+}
